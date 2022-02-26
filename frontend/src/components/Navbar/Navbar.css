@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-menu {
+    background-color: rgb(110, 94,254);
+    height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.list-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+    
+}
+
+.logo-menu {
+    position: absolute;
+    left: 0;
+    color: #00FFFF;
+    justify-self: auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #00FFFF;
+}
+
+.nav-link:hover {
+    background-color: #4682B4;
+    border-radius: 4px;
+    transition: all 0.3s ease-out;
+}
+
+.nav-link-signup {
+    background-color: #00FFFF;
+    color: black;
+    padding: 10px ;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.item-icone-rede-social{
+    font-size: 20px;
+    padding: 2px;
+}
+
+.itens-icone-rede-social {
+    display: block;
+    justify-items: center;
+    
+}
+
+.nav-menu logo-menu {
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+   
+    .nav-menu {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        transition: all 0.5s ease;
+    }
+
+    .logo-menu {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding-top: 5%;
+   
+    }
+
+    .list-menu {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        gap: 20px 5px;
+        margin-top: 10px;
+    }
+
+    .itens-icone-rede-social {
+        display: flex;
+        position: absolute;
+        top: 5px;
+    }
+
+}

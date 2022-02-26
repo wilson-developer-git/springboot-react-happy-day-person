@@ -1,9 +1,11 @@
-import { useState } from 'react'
 
-function App() {
-  return (
-   <h1>Ola mundo!</h1>
-  )
+import './App.css';
+import { Navbar } from './components/Navbar/Navbar';
+
+export function App() {
+    return (
+        <div className="App">
+            <Navbar />
+        </div>
+    );
 }
-
-export default App
